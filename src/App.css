@@ -1,0 +1,266 @@
+html {
+  box-sizing: border-box;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  transition: 250ms;
+}
+
+body {
+  background-color: #fff;
+  color: #212121;
+  line-height: 1.5;
+  font-family: 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, 'Open Sans', Ubuntu, Cantarell, sans-serif;
+
+  background: #d38312; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #a83279,
+    #d38312
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #a83279,
+    #d38312
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: grey;
+  text-decoration: none;
+}
+
+#root ul {
+  /* background-color: rgba(0, 0, 0, 0.733); */
+  /* backdrop-filter: blur(20px); */
+  border-radius: 20px;
+  /* padding: 50px; */
+  /* width: 500px; */
+  margin: 0 auto;
+}
+
+#root ul h2 {
+  text-align: center;
+  color: #fff;
+}
+
+#root ul a {
+  color: rgb(255, 255, 255);
+
+  font-size: 20px;
+}
+
+#root ul a li {
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.733);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  width: 400px;
+}
+
+#root ul a li:hover {
+  transform: scale(1.05);
+}
+
+.film-info {
+  margin: 20px auto;
+  width: 600px;
+  background-color: rgba(0, 0, 0, 0.733);
+  backdrop-filter: blur(20px);
+  border-radius: 50px;
+  padding: 20px;
+}
+
+.film-info button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin: 5px 0 0 5px;
+  background-color: rgb(0, 0, 0);
+  font-size: 20px;
+  color: #fff;
+}
+
+.film-info button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.film-info div {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.film-info div ul {
+  margin: 0 auto;
+  width: 150px;
+}
+
+.film-info div ul li {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.film-info div ul li a {
+  margin: 0px;
+  background-color: #000;
+  border-radius: 20px;
+  padding: 5px 20px;
+}
+
+.film-info div ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.363);
+}
+
+.film-info div img {
+  border-radius: 20px;
+}
+
+.film-info div h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.film-info div h1,
+.film-info div p,
+.film-info div h3,
+.film-info div span {
+  color: #fff;
+}
+
+.Loader {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+
+  padding: 10px;
+}
+
+.nav-top {
+  margin: 0 auto;
+}
+
+.nav-top a {
+  background-color: rgb(0, 0, 0);
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.nav-top a:hover {
+  background-color: rgb(139, 53, 38);
+}
+
+.nav-link {
+  margin-left: 10px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.nav-link:active {
+  color: #00bfff;
+}
+
+.ErrorMessage {
+  padding-top: 10px;
+  height: 60px;
+  text-align: center;
+  color: red;
+  background-color: #ffeeba;
+}
+
+.cast-gallery {
+  display: grid;
+  max-width: calc(100vw - 60px);
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 16px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.cast-gallery__item {
+  text-align: center;
+}
+
+.cast-gallery__img {
+  margin: 0 auto;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.card > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.card p {
+  font-size: 20px;
+  color: #000;
+}
+
+.title {
+  margin: 0 auto;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.item {
+  margin: 20px 10px;
+  background-color: rgba(228, 228, 228, 0.829);
+  backdrop-filter: blur(20px);
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+.item:hover {
+  transform: scale(1.05);
+}
+
+.item img {
+  border-radius: 20px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  max-width: calc(100vw - 60px);
+  grid-gap: 10px;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+}
